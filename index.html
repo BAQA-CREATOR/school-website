@@ -293,45 +293,73 @@
     <div id="registration" class="section form-section">
         <h2>Student's Registration Form</h2>
         <form>
-            <label>Full Name:</label>
-            <input type="text" name="fullname" required>
+            <!-- Personal Information Section -->
+            <fieldset style="border: none; margin-bottom: 20px;">
+                <legend style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">Personal Information</legend>
+                
+                <label>Full Name:</label>
+                <input type="text" name="fullname" required>
+                <br><br>
 
-            <label>Email:</label>
-            <input type="email" name="email" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <br><br>
 
-            <label>Password:</label>
-            <input type="password" name="password" required>
+                <label>Password:</label>
+                <input type="password" name="password" required>
+                <br><br>
 
-            <label>Phone Number:</label>
-            <input type="number" name="phone" required>
+                <label>Phone Number:</label>
+                <input type="number" name="phone" required>
+                <br><br>
 
-            <label>Date of Birth:</label>
-            <input type="date" name="dob" required>
+                <label>Date of Birth:</label>
+                <input type="date" name="dob" required>
+                <br><br>
 
-            <label>Your Age:</label>
-            <input type="number" name="age" required>
+                <label>Your Age:</label>
+                <input type="number" name="age" required>
+                <br><br>
+            </fieldset>
 
-            <p>Gender</p>
-            <input type="radio" name="gender" value="Male" required>
-            <label>Male</label>
-            <br>
-            <input type="radio" name="gender" value="Female" required>
-            <label>Female</label>
+            <!-- Gender Section -->
+            <fieldset style="border: none; margin-bottom: 20px;">
+                <legend style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">Gender</legend>
+                
+                <input type="radio" name="gender" value="Male" required>
+                <label style="display: inline; margin-right: 20px;">Male</label>
+                
+                <input type="radio" name="gender" value="Female" required>
+                <label style="display: inline;">Female</label>
+                <br><br>
+            </fieldset>
 
-            <p>Hobbies</p>
-            <input type="checkbox" name="hobbies" value="Reading">
-            <label>Reading</label>
-            <br>
-            <input type="checkbox" name="hobbies" value="Quran">
-            <label>Quran</label>
-            <br>
-            <input type="checkbox" name="hobbies" value="Praying">
-            <label>Praying</label>
-            <br>
-            <input type="checkbox" name="hobbies" value="Playing games">
-            <label>Playing games</label>
+            <!-- Hobbies Section -->
+            <fieldset style="border: none; margin-bottom: 20px;">
+                <legend style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">Hobbies</legend>
+                
+                <input type="checkbox" name="hobbies" value="Reading">
+                <label style="display: inline; margin-right: 20px;">Reading</label>
+                <br>
+                
+                <input type="checkbox" name="hobbies" value="Quran">
+                <label style="display: inline; margin-right: 20px;">Quran</label>
+                <br>
+                
+                <input type="checkbox" name="hobbies" value="Praying">
+                <label style="display: inline; margin-right: 20px;">Praying</label>
+                <br>
+                
+                <input type="checkbox" name="hobbies" value="Playing games">
+                <label style="display: inline;">Playing games</label>
+                <br><br>
+            </fieldset>
 
-            <label>Class Applying For:
+            <!-- Education Section -->
+            <fieldset style="border: none; margin-bottom: 20px;">
+                <legend style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">Education</legend>
+                
+                <label>Class Applying For:</label>
                 <select name="class_applying" required>
                     <option value="">Select Class</option>
                     <option>JSS1</option>
@@ -341,9 +369,9 @@
                     <option>SS2</option>
                     <option>SS3</option>
                 </select>
-            </label>
+                <br><br>
 
-            <label>Current Class:
+                <label>Current Class:</label>
                 <select name="current_class" required>
                     <option value="">Select Class</option>
                     <option>JSS1</option>
@@ -354,15 +382,24 @@
                     <option>SS3</option>
                     <option>Not Specified</option>
                 </select>
-            </label>
+                <br><br>
+            </fieldset>
 
-            <label>Your Home Address:</label>
-            <textarea name="address" rows="4" required></textarea>
+            <!-- Address and Upload Section -->
+            <fieldset style="border: none; margin-bottom: 20px;">
+                <legend style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;">Additional Information</legend>
+                
+                <label>Your Home Address:</label>
+                <textarea name="address" rows="4" required placeholder="Enter your home address"></textarea>
+                <br><br>
 
-            <label>Upload Your Image:</label>
-            <input type="file" name="image" accept="image/*">
+                <label>Upload Your Image:</label>
+                <input type="file" name="image" accept="image/*">
+                <br><br>
+            </fieldset>
 
-            <button type="submit">Submit</button>
+            <!-- Submit Button -->
+            <button type="submit" style="padding: 12px 30px; font-size: 1.1em; cursor: pointer;">Submit</button>
         </form>
     </div>
 
