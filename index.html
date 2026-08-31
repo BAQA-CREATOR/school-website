@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAQA Schools - Student Exhibition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: limegreen;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo h1 {
+            color: violet;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .logo h3 {
+            color: violet;
+            font-style: italic;
+        }
+        .welcome {
+            background-color: limegreen;
+            color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .section {
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .home-section {
+            background-color: darkgreen;
+        }
+        .home-section h1, .home-section h2 {
+            color: chartreuse;
+        }
+        .home-section h1.profile {
+            color: khaki;
+        }
+        .about-section {
+            background-color: blueviolet;
+            color: white;
+        }
+        .skills-section {
+            background-color: aqua;
+        }
+        .courses-section {
+            background-color: red;
+            color: white;
+        }
+        .media-section {
+            background-color: yellow;
+            padding: 20px;
+        }
+        .media-section video,
+        .media-section audio {
+            margin: 20px 0;
+            max-width: 100%;
+        }
+        .form-section {
+            background-color: violet;
+            padding: 30px;
+        }
+        .form-section form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .form-section label,
+        .form-section input,
+        .form-section textarea,
+        .form-section select {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        .form-section button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-section button:hover {
+            background-color: #555;
+        }
+        .contact-section {
+            background-color: green;
+            color: white;
+            padding: 30px;
+        }
+        .contact-section input {
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BAQA SCHOOLS</h1>
+            <h3>...enhancing lives, shaping the future...</h3>
+        </div>
+    </header>
+
+    <div class="welcome">
+        <h2>Welcome to our school's student exhibition website where we showcase some of our students.</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home Section</a></li>
+            <li><a href="#about">About Section</a></li>
+            <li><a href="#skills">Student's Skills Section</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#registration">Registration Form</a></li>
+            <li><a href="#contact">Student's Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="section home-section">
+        <h1>HOME SECTION</h1>
+        <h2 style="color: beige;">Welcome Bello Abdulquahar Opeyemi!!!</h2>
+        <h1 class="profile">Your profile:</h1>
+        <ul>
+            <li>This is a website for people to know more about you.</li>
+        </ul>
+        <img src="./WIN_20260823_04_49_16_Pro.jpg" alt="This is my personal picture" width="400px">
+        <h1 class="profile">Student's Description:</h1>
+        <p>My name is Bello Abdulquahar Opeyemi. I am 13 years old. I am short and dark in complexion.</p>
+        <p>I am a student of BAQA school. I graduated from JSS3 this session and I was the class captain. I am now going to SSS1.</p>
+    </div>
+
+    <div id="about" class="section about-section">
+        <h1>ABOUT</h1>
+        <div>
+            <p>My name is Bello Abdulquahar Opeyemi. I am 13 years old. I am short and dark in complexion.</p>
+            <p>I am a muslim and I love serving ALLAH. My future ambition is to become a soldier.</p>
+            <p>My goals in the Nigerian army are:</p>
+            <p>I want to become a soldier because I want to defend our territorial boundaries.</p>
+            <p>I want to help Nigerian army strong enough to protect our country from external threat.</p>
+            <p>I want to improve Nigerian army weaponry and I pray Almighty ALLAH crown my effort and determination with supreme success.</p>
+        </div>
+        <h2>QUOTATION: Victory is from ALLAH alone</h2>
+        <ul>
+            <li>Worshiping ALLAH</li>
+            <li>Reading</li>
+            <li>Playing football</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="section skills-section">
+        <h2>Your Skills</h2>
+        <ul>
+            <li>Personal Skills
+                <ul>
+                    <li>Football skills</li>
+                    <li>Knitting skills</li>
+                    <li>Bead making</li>
+                </ul>
+            </li>
+            <li>Professional Skills
+                <ul>
+                    <li>Tech skills</li>
+                    <li>Trading skills</li>
+                    <li>Confidentiality</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="courses" class="section courses-section">
+        <h2>Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Title</th>
+                    <th>Teacher</th>
+                    <th>Term</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MTH</td>
+                    <td>Mathematics</td>
+                    <td>Mr Temitope</td>
+                    <td>3rd term</td>
+                </tr>
+                <tr>
+                    <td>Eng</td>
+                    <td>English</td>
+                    <td>Mrs Damola</td>
+                    <td>3rd term</td>
+                </tr>
+                <tr>
+                    <td>BST1</td>
+                    <td>Basic Science and Technology 1</td>
+                    <td>Mr Temitope and Mrs Olatunji</td>
+                    <td>3rd term</td>
+                </tr>
+                <tr>
+                    <td>BST2</td>
+                    <td>Basic Science and Technology 2</td>
+                    <td>Mr Muhammad and Mr Abdulquadri</td>
+                    <td>3rd term</td>
+                </tr>
+                <tr>
+                    <td>CCA</td>
+                    <td>Cultural and Creative Arts</td>
+                    <td>Mr Olaars</td>
+                    <td>3rd term</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="media" class="section media-section">
+        <h2>Media</h2>
+        <video src="WIN_20260825_01_18_58_Pro.mp4" width="100%" height="400px" controls loop>
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <audio controls style="width: 100%; max-width: 400px;">
+            <source src="Recording (12).m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <p style="margin-top: 20px;">If you want to register your ward in our school click <a href="#registration">here</a></p>
+    </div>
+
+    <div id="registration" class="section form-section">
+        <h2>Student's Registration Form</h2>
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Phone Number:</label>
+            <input type="number" name="phone" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+
+            <label>Your Age:</label>
+            <input type="number" name="age" required>
+
+            <p>Gender</p>
+            <input type="radio" name="gender" value="Male" required>
+            <label>Male</label>
+            <br>
+            <input type="radio" name="gender" value="Female" required>
+            <label>Female</label>
+
+            <p>Hobbies</p>
+            <input type="checkbox" name="hobbies" value="Reading">
+            <label>Reading</label>
+            <br>
+            <input type="checkbox" name="hobbies" value="Quran">
+            <label>Quran</label>
+            <br>
+            <input type="checkbox" name="hobbies" value="Praying">
+            <label>Praying</label>
+            <br>
+            <input type="checkbox" name="hobbies" value="Playing games">
+            <label>Playing games</label>
+
+            <label>Class Applying For:
+                <select name="class_applying" required>
+                    <option value="">Select Class</option>
+                    <option>JSS1</option>
+                    <option>JSS2</option>
+                    <option>JSS3</option>
+                    <option>SS1</option>
+                    <option>SS2</option>
+                    <option>SS3</option>
+                </select>
+            </label>
+
+            <label>Current Class:
+                <select name="current_class" required>
+                    <option value="">Select Class</option>
+                    <option>JSS1</option>
+                    <option>JSS2</option>
+                    <option>JSS3</option>
+                    <option>SS1</option>
+                    <option>SS2</option>
+                    <option>SS3</option>
+                    <option>Not Specified</option>
+                </select>
+            </label>
+
+            <label>Your Home Address:</label>
+            <textarea name="address" rows="4" required></textarea>
+
+            <label>Upload Your Image:</label>
+            <input type="file" name="image" accept="image/*">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="contact" class="section contact-section">
+        <h2>Student's Contact</h2>
+        <label>Your Email Address:</label>
+        <input type="email" name="email" placeholder="Input your email address">
+
+        <label>Phone Number:</label>
+        <input type="number" name="phone" placeholder="Type your number">
+
+        <label>Location:</label>
+        <input type="text" placeholder="Type your Location" name="location">
+    </div>
+
+    <div class="footer">
+        <p>Return to the <a href="#home">top</a></p>
+        <p>&copy; 2026 BAQA Schools. All rights reserved.</p>
+    </div>
+</body>
+</html>
